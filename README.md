@@ -11,7 +11,7 @@ This project implements an automated system for detecting cardiac arrhythmias us
 
 ## Project Structure
 ```
-.
+ECG_Arrhythmia_Exploration_and_Prediction
 ├── data/
 │   └── mit-bih-arrhythmia-database-1.0.0/
 │       ├── mitdbdir/
@@ -35,6 +35,11 @@ This project implements an automated system for detecting cardiac arrhythmias us
 
 ## Setup
 1. Clone the repository and navigate to the project directory.
+   ```bash
+   git clone https://github.com/sayantan007pal/ECG_Arrhythmia_Exploration_and_Prediction.git
+   cd ECG_Arrhythmia_Exploration_and_Prediction
+
+   ```
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
@@ -59,6 +64,8 @@ Test your trained models interactively:
 ```bash
 python src/gui_test.py
 ```
+<img width="1352" alt="Screenshot 2025-05-13 at 3 54 36 AM" src="https://github.com/user-attachments/assets/b1ad6735-cf13-48fd-87f2-2cb640748853" />
+
 - **What it does:**
   - Lets you select a saved model (RandomForest, SVM, MLP)
   - Enter ECG segment data manually (comma-separated) or upload a CSV file (one segment per row)
@@ -91,6 +98,8 @@ python src/model_tuning.py
 ```bash
 python src/tsne_visualization.py
 ```
+![Figure_1](https://github.com/user-attachments/assets/3391cd4c-79d5-49ae-85ac-3ce2be702332)
+
 - **What it does:**
   - Runs t-SNE on extracted features to reduce to 2D
   - Plots a 2D scatter plot colored by arrhythmia class
@@ -103,6 +112,8 @@ python src/tsne_visualization.py
 ```bash
 python src/per_class_roc.py
 ```
+![Per-Class-ROC-Curves](https://github.com/user-attachments/assets/021915ad-4234-4640-b1d8-e2bddec50ee3)
+
 - **What it does:**
   - Loads the best tuned model
   - Plots ROC curves for each class (multi-class ROC)
@@ -115,6 +126,8 @@ python src/per_class_roc.py
 ```bash
 python src/error_analysis.py
 ```
+![True_A_Pridicted_N](https://github.com/user-attachments/assets/a07660ad-9292-488a-8fca-932c3ab8b5b5)
+
 - **What it does:**
   - Loads the best tuned model
   - Finds and saves all misclassified examples (true label, predicted label, features)
