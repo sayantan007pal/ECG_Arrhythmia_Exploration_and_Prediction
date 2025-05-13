@@ -40,6 +40,12 @@ ECG_Arrhythmia_Exploration_and_Prediction
    cd ECG_Arrhythmia_Exploration_and_Prediction
 
    ```
+  - Create Virtual environmet
+   ```bash
+    python -m venv venv
+    source venv/bin/activate
+   ```
+    
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
