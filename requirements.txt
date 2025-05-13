@@ -1,0 +1,7 @@
+numpy
+scipy
+pysimplegui
+matplotlib
+scikit-learn
+pandas
+wfdb 
